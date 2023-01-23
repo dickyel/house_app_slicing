@@ -402,14 +402,192 @@ class HomePage extends StatelessWidget {
           ),
         );
 
+    Widget citiesTitle() => Container(
+          margin: const EdgeInsets.only(
+            top: 20,
+            right: 20,
+            left: 20,
+          ),
+          child: Row(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+              Text(
+                'Cities',
+                style: globalText.copyWith(
+                  fontSize: 20,
+                  fontWeight: FontWeight.bold,
+                ),
+              ),
+            ],
+          ),
+        );
+
     Widget city() => Container(
         margin: const EdgeInsets.only(
           top: 20,
           left: 20,
           right: 20,
+          bottom: 20,
         ),
         child: Column(
-          children: [],
+          children: [
+            Container(
+              height: 90,
+              width: double.infinity,
+              padding: EdgeInsets.all(10),
+              decoration: BoxDecoration(
+                  borderRadius: BorderRadius.circular(5), color: white),
+              child: Row(
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                children: [
+                  Row(
+                    children: [
+                      Container(
+                        height: 70,
+                        width: 90,
+                        child: Image.asset('assets/cover.png'),
+                      ),
+                      SizedBox(
+                        width: 10,
+                      ),
+                      Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        mainAxisAlignment: MainAxisAlignment.center,
+                        children: [
+                          Text(
+                            'Jakarta Selatan',
+                            style: globalText.copyWith(
+                                fontSize: 16, fontWeight: FontWeight.bold),
+                          ),
+                          Text(
+                            'Jakarta Selatan',
+                            style: globalText.copyWith(
+                                fontSize: 14, fontWeight: FontWeight.w300),
+                          ),
+                        ],
+                      ),
+                    ],
+                  ),
+                  Container(
+                    padding: EdgeInsets.all(8),
+                    decoration: BoxDecoration(
+                        borderRadius: BorderRadius.circular(10), color: black2),
+                    child: Text(
+                      'HOT',
+                      style: globalText.copyWith(
+                          fontSize: 14,
+                          fontWeight: FontWeight.bold,
+                          color: yellow),
+                    ),
+                  )
+                ],
+              ),
+            ),
+            Container(
+              height: 90,
+              width: double.infinity,
+              padding: EdgeInsets.all(10),
+              decoration: BoxDecoration(
+                  borderRadius: BorderRadius.circular(5), color: white),
+              child: Row(
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                children: [
+                  Row(
+                    children: [
+                      Container(
+                        height: 70,
+                        width: 90,
+                        child: Image.asset('assets/cover.png'),
+                      ),
+                      SizedBox(
+                        width: 10,
+                      ),
+                      Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        mainAxisAlignment: MainAxisAlignment.center,
+                        children: [
+                          Text(
+                            'Jakarta Selatan',
+                            style: globalText.copyWith(
+                                fontSize: 16, fontWeight: FontWeight.bold),
+                          ),
+                          Text(
+                            'Jakarta Selatan',
+                            style: globalText.copyWith(
+                                fontSize: 14, fontWeight: FontWeight.w300),
+                          ),
+                        ],
+                      ),
+                    ],
+                  ),
+                  Container(
+                    padding: EdgeInsets.all(8),
+                    decoration: BoxDecoration(
+                        borderRadius: BorderRadius.circular(10), color: black2),
+                    child: Text(
+                      'HOT',
+                      style: globalText.copyWith(
+                          fontSize: 14,
+                          fontWeight: FontWeight.bold,
+                          color: yellow),
+                    ),
+                  )
+                ],
+              ),
+            ),
+            Container(
+              height: 90,
+              width: double.infinity,
+              padding: EdgeInsets.all(10),
+              decoration: BoxDecoration(
+                  borderRadius: BorderRadius.circular(5), color: white),
+              child: Row(
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                children: [
+                  Row(
+                    children: [
+                      Container(
+                        height: 70,
+                        width: 90,
+                        child: Image.asset('assets/cover.png'),
+                      ),
+                      SizedBox(
+                        width: 10,
+                      ),
+                      Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        mainAxisAlignment: MainAxisAlignment.center,
+                        children: [
+                          Text(
+                            'Jakarta Selatan',
+                            style: globalText.copyWith(
+                                fontSize: 16, fontWeight: FontWeight.bold),
+                          ),
+                          Text(
+                            'Jakarta Selatan',
+                            style: globalText.copyWith(
+                                fontSize: 14, fontWeight: FontWeight.w300),
+                          ),
+                        ],
+                      ),
+                    ],
+                  ),
+                  Container(
+                    padding: EdgeInsets.all(8),
+                    decoration: BoxDecoration(
+                        borderRadius: BorderRadius.circular(10), color: black2),
+                    child: Text(
+                      'HOT',
+                      style: globalText.copyWith(
+                          fontSize: 14,
+                          fontWeight: FontWeight.bold,
+                          color: yellow),
+                    ),
+                  )
+                ],
+              ),
+            )
+          ],
         ));
 
     return ListView(
@@ -421,6 +599,8 @@ class HomePage extends StatelessWidget {
         pick(),
         agentTitle(),
         agent(),
+        citiesTitle(),
+        city()
       ],
     );
   }
